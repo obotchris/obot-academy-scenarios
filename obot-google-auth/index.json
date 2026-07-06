@@ -1,0 +1,34 @@
+{
+  "title": "Set Up Google Authentication in Obot",
+  "description": "Configure Google as an OAuth authentication provider for Obot, the open-source MCP platform.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Log In with the Bootstrap Token",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a Google OAuth App",
+        "text": "step2.md"
+      },
+      {
+        "title": "Configure Google Auth in Obot",
+        "text": "step3.md"
+      },
+      {
+        "title": "Set Yourself as Owner",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "thumbnail": "thumbnail.png"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Add an LLM Model Provider to Obot",
+  "description": "Configure a model provider (OpenAI, Anthropic, or another LLM) in Obot, the open-source MCP platform, and test it in the built-in chat.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Open the Obot UI",
+        "text": "step1.md"
+      },
+      {
+        "title": "Configure a Model Provider",
+        "text": "step2.md"
+      },
+      {
+        "title": "Test the Model in Chat",
+        "text": "step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "thumbnail": "thumbnail.png"
+}
