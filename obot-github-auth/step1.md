@@ -4,7 +4,7 @@ Because authentication is enabled, Obot requires a one-time **bootstrap token** 
 
 ## Retrieve Your Bootstrap Token
 
-The bootstrap token for your Obot instance is displayed in this environment. Locate it in the environment panel and copy the token value — you will need it to log in.
+The bootstrap token for your Obot instance is displayed on the launch page. Locate it in the environment panel and copy the token value — you will need it to log in.
 
 ## Open the Obot Admin UI
 

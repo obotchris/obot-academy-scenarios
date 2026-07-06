@@ -22,9 +22,5 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "backend": {
-    "imageid": "ubuntu"
-  },
-  "thumbnail": "thumbnail.png"
+  }
 }

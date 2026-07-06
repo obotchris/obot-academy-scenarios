@@ -21,7 +21,6 @@ Each scenario is a directory containing:
 - `intro.md` — introduction shown before the steps
 - `step*.md` — the individual steps
 - `finish.md` — closing screen
-- `thumbnail.png` — scenario thumbnail
 
 The two auth scenarios assume Obot is running with authentication enabled, so they begin by logging in with the bootstrap token surfaced in the environment. The MCP and LLM scenarios go straight to the admin UI.
 
