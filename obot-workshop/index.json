@@ -1,6 +1,6 @@
 {
   "title": "Obot Workshop: GitHub Auth, MCP, and Audit End-to-End",
-  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude, query your repositories, and review the audit log.",
+  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude, query your repositories, review the audit log, then install the Obot CLI, scan your inventory, and install a skill in Claude.",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -25,6 +25,18 @@
       {
         "title": "View the Audit Log",
         "text": "step5.md"
+      },
+      {
+        "title": "Install and Set Up the Obot CLI",
+        "text": "step6.md"
+      },
+      {
+        "title": "Scan and Report Your Inventory",
+        "text": "step7.md"
+      },
+      {
+        "title": "Install a Skill in Claude",
+        "text": "step8.md"
       }
     ],
     "finish": {

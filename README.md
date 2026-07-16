@@ -8,7 +8,7 @@ Based on [chrisurwin/killacoda](https://github.com/chrisurwin/killacoda).
 
 | Scenario | Description |
 |----------|-------------|
-| [`obot-workshop`](./obot-workshop) | Full end-to-end walkthrough: bootstrap login → GitHub auth → add the GitHub MCP server to Claude → query repositories → view the audit log |
+| [`obot-workshop`](./obot-workshop) | Full end-to-end walkthrough: bootstrap login → GitHub auth → add the GitHub MCP server to Claude → query repositories → view the audit log → install the Obot CLI → scan inventory → install a skill in Claude |
 | [`obot-github-auth`](./obot-github-auth) | Set up GitHub as an OAuth authentication provider |
 | [`obot-google-auth`](./obot-google-auth) | Set up Google as an OAuth authentication provider |
 | [`obot-add-mcp-server`](./obot-add-mcp-server) | Add an MCP server from the catalog, connect a client, and view the audit log |
