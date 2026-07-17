@@ -35,4 +35,6 @@ The first user to log in needs to be set as **Owner**.
 2. Click **Sign in with GitHub** and authenticate with your GitHub account
 3. When prompted, set yourself as **Owner**
 
+> **Heads up:** the GitHub sign-in cannot load inside the embedded browser on the right — GitHub's frame policy blocks it. Click **Open in New Tab** (top-right of the environment panel) to open Obot in its own tab, then sign in with GitHub and set yourself as **Owner** there. Once you've done that, return here and **refresh** the page to continue.
+
 You now have a GitHub-authenticated Obot instance with yourself as the administrator. Anyone with a valid email can now log in; you can manage their roles in the **Users** section once their accounts exist.
