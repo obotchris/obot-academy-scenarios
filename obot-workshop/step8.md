@@ -1,37 +1,25 @@
-# Install a Skill in Claude
+# Automate Scanning with Hooks
 
-Finally, use Obot to install a **skill** into Claude. Skills are reusable capabilities your organisation can publish through Obot and roll out to everyone's agents.
+Running `obot-sentry scan --submit` by hand is fine for a one-off, but you don't want to rely on people remembering to do it. **Hooks** let `obot-sentry` run scans automatically, so your inventory stays current on its own.
 
-## Option A: From the Terminal
-
-Search the catalog for a skill:
+## Install the Hooks
 
 ```bash
-obot skills search "incident report"
+sudo obot-sentry hook-install
 ```
 
-Install one into your agents:
+This is run with `sudo` because the hooks are installed at the system level.
 
-```bash
-obot skills install incident-report
-```
+## What the Hooks Do
 
-## Option B: From Inside Claude Code
+Once installed, the hooks:
 
-Because `obot setup` installed Obot's bootstrap skills into Claude Code, you can do the same thing without leaving your agent. In a Claude Code session, run:
+- **Trigger scans automatically** — instead of relying on a manual `obot-sentry scan`, a scan runs on its own, so newly added AI clients, MCP servers, and skills are picked up without anyone remembering to run it.
+- **Respect the submission throttle** — as with a manual run, results are submitted to your Obot instance at most once every 60 minutes, so frequent triggers don't flood the server.
+- **Keep the fleet inventory fresh** — because scans keep flowing in, the per-device, per-MCP-server, and per-skill views in the Obot admin UI stay up to date, which is what makes fleet-wide visibility reliable.
 
-```
-/obot-skills-search incident report
-```
+## Removing the Hooks
 
-then install the one you want:
+The hooks are removed as part of uninstalling `obot-sentry` (see the cleanup commands in the previous step).
 
-```
-/obot-skills-install incident-report
-```
-
-## Verify
-
-Start a new Claude session and confirm the skill is available — Claude will now be able to invoke it. You've gone full circle: from a fresh Obot instance to an authenticated, audited, tool-enabled AI client with organisation-managed skills.
-
-> Skills installed this way are managed centrally in Obot, so updates and new skills can be pushed out to your whole team from one place.
+You've now gone full circle: from a fresh Obot instance to an authenticated, audited, tool-enabled AI client, with an enrolled machine that continuously reports its AI-tooling inventory back to Obot.

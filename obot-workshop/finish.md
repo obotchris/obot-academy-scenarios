@@ -9,9 +9,9 @@ You have completed a full Obot workflow end to end.
 - How to add the GitHub MCP server and connect Claude through the Obot gateway
 - How to query your GitHub repositories from Claude via an MCP tool call
 - How to review that tool call in the audit log
-- How to install the Obot CLI and connect it to your instance with `obot setup`
-- How to inventory local AI clients, MCP servers, and skills with `obot scan`
-- How to install a skill into Claude with `obot skills install` / `/obot-skills-install`
+- How to install and enroll the Obot Sentry client (`obot-sentry`) using an enrollment key
+- How to inventory local AI clients, MCP servers, and skills with `obot-sentry scan --submit`
+- How to automate scanning with hooks (`sudo obot-sentry hook-install`)
 
 ## Next Steps
 
