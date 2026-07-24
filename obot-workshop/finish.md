@@ -12,6 +12,7 @@ You have completed a full Obot workflow end to end.
 - How to install and enroll the Obot Sentry client (`obot-sentry`) using an enrollment key
 - How to inventory local AI clients, MCP servers, and skills with `obot-sentry scan --submit`
 - How to automate scanning with hooks (`sudo obot-sentry hook-install`)
+- How to install a local MCP server and see its audit logs forwarded to Obot
 
 ## Next Steps
 

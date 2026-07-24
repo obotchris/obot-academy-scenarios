@@ -1,6 +1,6 @@
 {
   "title": "Obot Workshop: GitHub Auth, MCP, and Audit End-to-End",
-  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude, query your repositories, review the audit log, then install and enroll the Obot Sentry client, scan your inventory, and automate scanning with hooks.",
+  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude, query your repositories, review the audit log, then install and enroll the Obot Sentry client, scan your inventory, automate scanning with hooks, and forward a local MCP server's audit logs to Obot.",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -37,6 +37,10 @@
       {
         "title": "Automate Scanning with Hooks",
         "text": "step8.md"
+      },
+      {
+        "title": "Forward Local MCP Audit Logs to Obot",
+        "text": "step9.md"
       }
     ],
     "finish": {

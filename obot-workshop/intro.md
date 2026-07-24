@@ -12,8 +12,9 @@ You will:
 6. Install and enroll the Obot Sentry client on your machine
 7. Scan and report the AI-tooling inventory on your machine
 8. Automate scanning with hooks so inventory stays current
+9. Install a local MCP server and see its audit logs forwarded to Obot
 
-By the end you will have seen how Obot authenticates users, hosts MCP servers, brokers AI tool calls, records everything for audit, and keeps an inventory of AI tooling across your machines.
+By the end you will have seen how Obot authenticates users, hosts MCP servers, brokers AI tool calls, records everything for audit, keeps an inventory of AI tooling across your machines, and forwards audit logs from local MCP servers back to the server.
 
 ## Prerequisites
 
