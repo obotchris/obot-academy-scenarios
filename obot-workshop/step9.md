@@ -4,34 +4,29 @@ In step 5 you saw that the GitHub MCP server ran through the **Obot gateway**, s
 
 Because you enrolled `obot-sentry` and installed its hooks, local MCP activity is now captured on the machine and its **audit logs are forwarded to your Obot server** — giving you the same visibility for local MCP servers as for gateway-hosted ones.
 
-## Step 1: Add a Local MCP Server to Claude
+## Step 1: Add a Local MCP Server to Claude Code
 
-Add a local MCP server directly to Claude Desktop's configuration. This one runs on your machine via `npx` — it does **not** go through Obot:
+Claude Code is one of the clients `obot-sentry` supports (along with Codex, VS Code, and Cursor). Add a local MCP server to Claude Code — it runs on your machine via `npx` and does **not** go through Obot:
 
-```json
-{
-  "mcpServers": {
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/path/to/a/folder"
-      ]
-    }
-  }
-}
+```bash
+claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem /path/to/a/folder
 ```
 
 Replace `/path/to/a/folder` with a directory on your machine the server is allowed to read.
 
-## Step 2: Restart Claude and Make a Tool Call
+## Step 2: Use the Server and Make a Tool Call
 
-Fully quit and relaunch Claude Desktop. In a new chat, send a prompt that uses the local server, for example:
+Start a Claude Code session in that directory and confirm the server is connected:
 
-> List the files in that folder
+```bash
+claude mcp list
+```
 
-Claude calls the local filesystem MCP server. Approve the call when prompted.
+Then send a prompt that uses the local server, for example:
+
+> List the files in this folder
+
+Claude Code calls the local filesystem MCP server. Approve the call when prompted.
 
 ## Step 3: See the Forwarded Audit Logs in Obot
 

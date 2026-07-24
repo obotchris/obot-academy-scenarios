@@ -20,6 +20,7 @@ By the end you will have seen how Obot authenticates users, hosts MCP servers, b
 
 - A GitHub account (for auth, and to create an OAuth App and a Personal Access Token)
 - Claude Desktop installed, to connect an AI client to the gateway
+- Claude Code installed, for the local MCP server step (`obot-sentry` supports Claude Code, Codex, VS Code, and Cursor)
 - A machine where you can install and enroll the Obot Sentry client (`obot-sentry`), with `sudo` access to install its hooks
 
 A running Obot instance with authentication enabled is provided for you in this environment — you do not need to install or start anything.
