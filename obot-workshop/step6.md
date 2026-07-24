@@ -2,45 +2,37 @@
 
 So far you've worked entirely in the browser. The **Obot CLI** brings Obot to your local machine — it connects your workstation to your Obot instance, installs Obot's skills into your AI agents, and can inventory what's installed.
 
-## Step 1: Install the CLI
+Enrolling the CLI is driven from the Obot admin UI: you generate an enrollment key, download the install artifacts for your platform, then follow the installation instructions.
 
-On macOS or Linux with Homebrew:
+## Step 1: Generate an Enrollment Key
 
-```bash
-brew install obot-platform/tap/obot
-```
+1. In the Obot admin UI, go to the CLI enrollment area
+2. Click **Generate Enrollment Key**
+3. Select the **installation method** — for this workshop, choose **Do it yourself**
+4. Select your **operating system**
 
-Alternatively, download the binary for your platform from the [Obot releases page](https://github.com/obot-platform/obot/releases) and put it on your `PATH`.
+> ⚠️ **The enrollment key is shown only once.** Copy it now and save it somewhere safe — you won't be able to view it again. You'll need it to enroll the CLI in the next step.
 
-Verify it's installed:
+## Step 2: Download the Install Artifacts
 
-```bash
-obot --version
-```
+Download the install artifacts for your operating system from the dialog.
 
-## Step 2: Connect the CLI to Your Obot Instance
+## Step 3: Install and Enroll the CLI
 
-Run `obot setup`, pointing it at the URL of the Obot instance you've been using:
+Follow the installation instructions shown for your platform. They walk you through installing the `obot` CLI and enrolling it against your Obot instance using the enrollment key you saved.
 
-```bash
-obot setup --url <your Obot instance URL>
-```
+Enrolling the CLI will:
 
-`obot setup` will:
-
-- Walk you through an **OAuth login** against your Obot instance (using the GitHub auth you configured earlier)
+- Connect your workstation to your Obot instance
 - Detect the coding agents installed on your machine (Claude Code, Cursor, VS Code, Codex, and others)
 - Install Obot's bootstrap skills into those agents: `obot`, `obot-scan`, `obot-skills-search`, and `obot-skills-install`
 
-Useful variations:
+## Step 4: Confirm It's Enrolled
 
-- `obot setup --url <url> --clients claude-code` — only set up Claude Code
-- `obot setup --url <url> --clients none` — configure the CLI only, don't touch any agents
-
-## Step 3: Confirm Setup
+Once installation completes, verify the CLI is connected:
 
 ```bash
 obot setup status
 ```
 
-You should see that the CLI is authenticated against your instance and which clients were configured.
+You should see that the CLI is enrolled against your instance and which clients were configured.
