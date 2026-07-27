@@ -11,7 +11,7 @@ In this step you'll add a source catalog. You won't use its servers just yet —
 3. Enter the Git repository URL:
 
    ```
-   https://github.com/chrisurwin/academy-catalog
+   https://github.com/obotchris/academy-catalog
    ```
 
 4. Save the source
