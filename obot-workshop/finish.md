@@ -6,13 +6,15 @@ You have completed a full Obot workflow end to end.
 
 - How to log in to Obot with the bootstrap token
 - How to set up GitHub authentication and make yourself **Owner**
-- How to add the GitHub MCP server and connect Claude through the Obot gateway
-- How to query your GitHub repositories from Claude via an MCP tool call
+- How to add the GitHub MCP server and connect Claude Code through the Obot gateway
+- How to query your GitHub repositories from Claude Code via an MCP tool call
 - How to review that tool call in the audit log
+- How to add a source catalog of MCP servers from a Git repository
 - How to install and enroll the Obot Sentry client (`obot-sentry`) using an enrollment key
 - How to inventory local AI clients, MCP servers, and skills with `obot-sentry scan --submit`
 - How to automate scanning with hooks (`sudo obot-sentry hook-install`)
 - How to install a local MCP server and see its audit logs forwarded to Obot
+- How to redact and block sensitive data with gateway filters — and why testing them matters
 
 ## Next Steps
 

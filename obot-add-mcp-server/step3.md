@@ -1,6 +1,6 @@
 # Connect an AI Client
 
-Claude Desktop (and Claude.ai) supports remote MCP servers. In this step you point Claude at your Obot MCP gateway so it can reach the GitHub MCP server you just added.
+Claude Code supports remote MCP servers. In this step you point Claude Code at your Obot MCP gateway so it can reach the GitHub MCP server you just added.
 
 ## Step 1: Get Your Obot Gateway Connection String
 
@@ -8,31 +8,20 @@ Claude Desktop (and Claude.ai) supports remote MCP servers. In this step you poi
 2. Click **Connect to Server**
 3. Copy the connection string shown in the dialog
 
-## Step 2: Configure Claude Desktop
+## Step 2: Add the Gateway to Claude Code
 
-Open the Claude Desktop configuration file:
+Add the Obot gateway as an MCP server in Claude Code, using the connection string from the dialog:
 
-- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-
-Add the Obot gateway as an MCP server:
-
-```json
-{
-  "mcpServers": {
-    "github-obot": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "<string from the Connect to Server dialog>"
-      ]
-    }
-  }
-}
+```bash
+claude mcp add github-obot -- npx mcp-remote <string from the Connect to Server dialog>
 ```
 
-## Step 3: Restart Claude Desktop
+## Step 3: Authenticate and Confirm
 
-Fully quit and relaunch Claude Desktop. When it launches it should prompt you to authenticate to the Obot gateway. Approve the connection.
+The first time Claude Code connects, `mcp-remote` opens your browser to authenticate to the Obot gateway. Approve the connection, then confirm the server is connected:
 
-> `mcp-remote` bridges Claude Desktop's local MCP transport to Obot's remote gateway, handling the OAuth handshake for you.
+```bash
+claude mcp list
+```
+
+> `mcp-remote` bridges Claude Code's local MCP transport to Obot's remote gateway, handling the OAuth handshake for you.

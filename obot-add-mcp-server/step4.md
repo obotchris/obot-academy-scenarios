@@ -4,7 +4,7 @@ With Claude connected to Obot, you can now call GitHub MCP tools directly from t
 
 ## Make a Request
 
-Open a new chat in Claude Desktop and send a prompt such as:
+In a Claude Code session, send a prompt such as:
 
 > List my GitHub repositories
 

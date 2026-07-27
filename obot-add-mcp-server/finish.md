@@ -6,7 +6,7 @@ You have added an MCP server to Obot and used it end to end.
 
 - How to add an MCP server (GitHub) from the built-in Obot catalog
 - How to configure it with a GitHub Personal Access Token
-- How to connect an AI client (Claude Desktop) to the Obot gateway
+- How to connect an AI client (Claude Code) to the Obot gateway
 - How to make a real MCP tool call and confirm it in the audit log
 
 ## Next Steps

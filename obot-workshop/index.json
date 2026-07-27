@@ -1,6 +1,6 @@
 {
   "title": "Obot Workshop: GitHub Auth, MCP, and Audit End-to-End",
-  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude, query your repositories, review the audit log, then install and enroll the Obot Sentry client, scan your inventory, automate scanning with hooks, and forward a local MCP server's audit logs to Obot.",
+  "description": "A complete Obot walkthrough: log in with the bootstrap token, set up GitHub authentication, add the GitHub MCP server to Claude Code, query your repositories, review the audit log, add a source catalog, install and enroll the Obot Sentry client, scan your inventory, automate scanning with hooks, forward a local MCP server's audit logs to Obot, and filter sensitive data with gateway filters.",
   "details": {
     "intro": {
       "text": "intro.md"
@@ -27,20 +27,28 @@
         "text": "step5.md"
       },
       {
-        "title": "Install and Enroll the Obot Sentry Client",
+        "title": "Add a Source Catalog",
         "text": "step6.md"
       },
       {
-        "title": "Scan and Report Your Inventory",
+        "title": "Install and Enroll the Obot Sentry Client",
         "text": "step7.md"
       },
       {
-        "title": "Automate Scanning with Hooks",
+        "title": "Scan and Report Your Inventory",
         "text": "step8.md"
       },
       {
-        "title": "Forward Local MCP Audit Logs to Obot",
+        "title": "Automate Scanning with Hooks",
         "text": "step9.md"
+      },
+      {
+        "title": "Forward Local MCP Audit Logs to Obot",
+        "text": "step10.md"
+      },
+      {
+        "title": "Filter Sensitive Data with Gateway Filters",
+        "text": "step11.md"
       }
     ],
     "finish": {

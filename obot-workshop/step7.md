@@ -1,34 +1,22 @@
-# Scan and Report Your Inventory
+# Install and Enroll the Obot Sentry Client
 
-Now that `obot-sentry` is enrolled, you can take an inventory of the AI tooling on your machine. A scan gives you — and, at the fleet level, your Obot admins — visibility into what's actually installed.
+So far you've worked entirely in the browser. **Obot Sentry** (`obot-sentry`) is the client that runs on your machine, takes an inventory of your AI tooling, and reports it back to your Obot instance.
 
-## Run a Scan
+Enrolling the client is driven from the Obot admin UI: you generate an enrollment key, download the install artifacts for your platform, then follow the installation instructions.
 
-```bash
-obot-sentry scan --submit
-```
+## Step 1: Generate an Enrollment Key
 
-`--submit` sends the results to your Obot instance. By default, scans are submitted at most once every 60 minutes; runs within that window skip submission.
+1. In the Obot admin UI, go to the client enrollment area
+2. Click **Generate Enrollment Key**
+3. Select the **installation method** — for this workshop, choose **Do it yourself**
+4. Select your **operating system**
 
-A scan reports:
+> ⚠️ **The enrollment key is shown only once.** Copy it now and save it somewhere safe — you won't be able to view it again. You'll need it to enroll the client in the next step.
 
-- Every **AI client** it recognises (Claude Code, Claude Desktop, Cursor, VS Code, Codex, Goose, Windsurf, Zed, and more)
-- The **MCP servers** each client is configured to talk to — including the `github-obot` gateway connection you added earlier
-- Any **skills and plugins** present on disk
+## Step 2: Download the Install Artifacts
 
-## Fleet Visibility in Obot
+Download the install artifacts for your operating system from the dialog.
 
-Because the client is enrolled against your Obot instance, submitted scans roll up into Obot for organisation-wide visibility. In the admin UI you can review inventory across devices — drilling into per-device scan history, seeing which MCP servers appear across users (collated by content hash), and which skills are installed where.
+## Step 3: Install and Enroll obot-sentry
 
-> This is how an organisation answers "what AI tools and MCP servers are running across our machines?" without manually surveying everyone.
-
-## Cleanup (Optional)
-
-To remove `obot-sentry` later — the binary, its configuration, and the device identity and scan state (macOS):
-
-```bash
-sudo rm -f /usr/local/bin/obot-sentry
-sudo defaults delete /Library/Preferences/com.obot.obot-sentry
-sudo rm -rf "/Library/Application Support/obot/obot-sentry"
-rm -rf "$HOME/Library/Application Support/obot/obot-sentry" "$HOME/Library/Caches/obot/obot-sentry"
-```
+Follow the installation instructions shown for your platform. They walk you through installing the `obot-sentry` client and enrolling it against your Obot instance using the enrollment key you saved. This connects your workstation to your Obot instance so its inventory rolls up centrally.
