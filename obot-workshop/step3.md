@@ -26,18 +26,16 @@ The GitHub MCP server needs a GitHub Personal Access Token (PAT) to reach your r
 
 ## Step 4: Add the Gateway to Claude Code
 
-Add the Obot gateway as an MCP server in Claude Code, using the connection string from the dialog:
+Add the Obot gateway as an HTTP MCP server in Claude Code, using the connection URL from the dialog:
 
 ```bash
-claude mcp add github-obot -- npx mcp-remote <string from the Connect to Server dialog>
+claude mcp add --transport http "github-obot" "<connection URL from the Connect to Server dialog>"
 ```
 
 ## Step 5: Authenticate and Confirm
 
-The first time Claude Code connects, `mcp-remote` opens your browser to authenticate to the Obot gateway — approve the connection. Then confirm the server is connected:
+The first time Claude Code connects, it opens your browser to authenticate to the Obot gateway — approve the connection. Then confirm the server is connected:
 
 ```bash
 claude mcp list
 ```
-
-> `mcp-remote` bridges Claude Code's local MCP transport to Obot's remote gateway, handling the OAuth handshake for you.
