@@ -6,7 +6,7 @@ Now that `obot-sentry` is enrolled, you can take an inventory of the AI tooling 
 
 ```bash
 obot-sentry scan --submit
-```
+```{{copy}}
 
 `--submit` sends the results to your Obot instance. By default, scans are submitted at most once every 60 minutes; runs within that window skip submission.
 
@@ -31,4 +31,4 @@ sudo rm -f /usr/local/bin/obot-sentry
 sudo defaults delete /Library/Preferences/com.obot.obot-sentry
 sudo rm -rf "/Library/Application Support/obot/obot-sentry"
 rm -rf "$HOME/Library/Application Support/obot/obot-sentry" "$HOME/Library/Caches/obot/obot-sentry"
-```
+```{{copy}}

@@ -30,7 +30,7 @@ Add the Obot gateway as an HTTP MCP server in Claude Code, using the connection 
 
 ```bash
 claude mcp add --transport http "github-obot" "<connection URL from the Connect to Server dialog>"
-```
+```{{copy}}
 
 ## Step 5: Authenticate and Confirm
 
@@ -38,4 +38,4 @@ The first time Claude Code connects, it opens your browser to authenticate to th
 
 ```bash
 claude mcp list
-```
+```{{copy}}

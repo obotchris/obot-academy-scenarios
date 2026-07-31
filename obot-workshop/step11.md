@@ -8,13 +8,11 @@ The `synthetic-pii` server returns fake records containing **names, email addres
 
 1. In the Obot catalog, find **`synthetic-pii`** (from the `academy-catalog` source you added earlier) and install it
 2. Open the server and click **Connect to Server**
-3. Copy the connection URL, then add it to Claude Code as an HTTP MCP server:
+3. Copy the connection URL, then add it to Claude Code as an HTTP MCP server (the URL looks like `https://<your-instance>.obotacademy.net/mcp-connect/default-synthetic-pii-<id>`):
 
-   ```bash
-   claude mcp add --transport http "synthetic-pii" "<connection URL from the Connect to Server dialog>"
-   ```
-
-   The URL looks like `https://<your-instance>.obotacademy.net/mcp-connect/default-synthetic-pii-<id>`.
+```bash
+claude mcp add --transport http "synthetic-pii" "<connection URL from the Connect to Server dialog>"
+```{{copy}}
 
 ## Step 2: List the Data (No Filter Yet)
 
