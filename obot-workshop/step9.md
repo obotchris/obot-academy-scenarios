@@ -6,7 +6,7 @@ Running `obot-sentry scan --submit` by hand is fine for a one-off, but you don't
 
 ```bash
 sudo obot-sentry hook-install
-```
+```{{copy}}
 
 This is run with `sudo` because the hooks are installed at the system level.
 

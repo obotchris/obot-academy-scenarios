@@ -10,7 +10,7 @@ Claude Code is one of the clients `obot-sentry` supports (along with Codex, VS C
 
 ```bash
 claude mcp add filesystem -- npx -y @modelcontextprotocol/server-filesystem /path/to/a/folder
-```
+```{{copy}}
 
 Replace `/path/to/a/folder` with a directory on your machine the server is allowed to read.
 
@@ -20,7 +20,7 @@ Start a Claude Code session in that directory and confirm the server is connecte
 
 ```bash
 claude mcp list
-```
+```{{copy}}
 
 Then send a prompt that uses the local server, for example:
 

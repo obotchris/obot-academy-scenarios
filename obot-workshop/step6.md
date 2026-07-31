@@ -8,13 +8,11 @@ In this step you'll add a source catalog. You won't use its servers just yet —
 
 1. In the Obot admin UI, navigate to the MCP catalog configuration (**MCP → Catalogs**, or **Sources**)
 2. Click **Add Source** (or **Add Catalog**)
-3. Enter the Git repository URL:
+3. Copy the Git repository URL below and paste it into Obot, then **Save** the source:
 
-   ```
-   https://github.com/obotchris/academy-catalog
-   ```
-
-4. Save the source
+```
+https://github.com/obotchris/academy-catalog
+```{{copy}}
 
 Obot syncs the repository and adds its servers to the catalog. Browse the catalog and confirm you can see the servers defined by `academy-catalog` — including **`synthetic-pii`**, which you'll come back to later.
 
