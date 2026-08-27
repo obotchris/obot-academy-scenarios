@@ -8,6 +8,12 @@ In a Claude Code session, send a prompt such as:
 
 > List my GitHub repositories
 
+The first time you do this you will be prompted to authenticate.
+
+Click the Obot redirect link that is presented. You will be prompted for a path, just put **/** and the PAT key that you created previously. The flow should complete and you should now be authenticated.
+
+Now return to Claude and issue the List my GitHub repositories again.
+
 Claude will recognise that the `list_repositories` tool (provided by the GitHub MCP server through Obot) is the right tool for the job and ask for your approval before calling it — click **Allow**.
 
 The request is routed through the Obot gateway to the GitHub MCP server, and Claude returns your repositories:

@@ -24,7 +24,7 @@ claude mcp list
 
 Then send a prompt that uses the local server, for example:
 
-> List the files in this folder
+> List the files in this folder using filesystem mcp
 
 Claude Code calls the local filesystem MCP server. Approve the call when prompted.
 
