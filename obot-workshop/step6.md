@@ -6,7 +6,7 @@ In this step you'll add a source catalog. You won't use its servers just yet —
 
 ## Add the Catalog Source
 
-1. In the Obot admin UI, navigate to the MCP catalog configuration (**MCP → Catalogs**, or **Sources**)
+1. In the Obot admin UI, navigate to the MCP catalog configuration (**MCP Management → MCP Catalog**, then the  **Catalog Sources** tab)
 2. Click **Add Source** (or **Add Catalog**)
 3. Copy the Git repository URL below and paste it into Obot, then **Save** the source:
 

@@ -4,8 +4,8 @@ Every tool call routed through the Obot gateway is recorded. The audit log lets 
 
 ## Open the Audit Log
 
-1. In the Obot admin UI, navigate to **Audit** (or **Monitoring → Audit Log**)
-2. You should see an entry for the `list_repositories` call you made in the previous step (plus any follow-ups)
+1. In the Obot admin UI, navigate to **Audit Logs** (or **Administration → MCP Management → Audit Log**)
+2. You should see 2  entries. An entry for the `search_repositories` and and event for the `get_me` call you made in the previous step (plus any follow-ups)
 
 ## Reading an Entry
 

@@ -2,13 +2,7 @@
 
 Next, add the **GitHub** MCP server from Obot's catalog and connect Claude Code to it through the Obot gateway.
 
-## Step 1: Install the GitHub MCP Server
-
-1. In the Obot admin UI, navigate to **MCP → Servers**
-2. Click **Add Server** (or browse the catalog tab) and search for **GitHub**
-3. Click the **GitHub** MCP server, then click **Install** (or **Add to Gateway**)
-
-## Step 2: Configure Credentials
+## Step 1: Configure Github Credentials
 
 The GitHub MCP server needs a GitHub Personal Access Token (PAT) to reach your repositories.
 
@@ -18,13 +12,13 @@ The GitHub MCP server needs a GitHub Personal Access Token (PAT) to reach your r
 4. Click **Generate token** and copy the value
 5. Make a note of the token as it will be used the first time you query **Github**
 
-## Step 3: Get the Gateway Connection String
+## Step 2: Get the Gateway Connection String
 
 1. In Obot, under **MCP Servers** open the GitHub MCP server.
 2. Click **Connect to Server**
 3. Copy the connection string shown in the dialog or click the button to add it to the clients that support that method.
 
-## Step 4: Add the Gateway to Claude Code
+## Step 3: Add the Gateway to Claude Code
 
 Add the Obot gateway as an HTTP MCP server in Claude Code, using the connection URL from the dialog:
 

@@ -22,6 +22,10 @@ Because the client is enrolled against your Obot instance, submitted scans roll 
 
 > This is how an organisation answers "what AI tools and MCP servers are running across our machines?" without manually surveying everyone.
 
+To view the device information naviage to **Device Management / Devices**, go to the Overview tab (if there is nothing showing change the windows to the last hour).
+
+Here you can see the information that has been published for the devices., You can drill into each of the tabs in this UI to find out more detailed information about the devices.
+
 ## Cleanup (Optional)
 
 To remove `obot-sentry` later — the binary, its configuration, and the device identity and scan state (macOS):

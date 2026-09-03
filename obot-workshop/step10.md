@@ -16,15 +16,19 @@ Replace `/path/to/a/folder` with a directory on your machine the server is allow
 
 ## Step 2: Use the Server and Make a Tool Call
 
-Start a Claude Code session in that directory and confirm the server is connected:
+Navigate to the directory that you just specified and confirm the server is connected:
 
 ```bash
 claude mcp list
 ```{{copy}}
 
+Start a claude code session from here
+
 Then send a prompt that uses the local server, for example:
 
 > List the files in this folder using filesystem mcp
+
+**It is important to specify the ***Using the filesystem mcp*** otherwise claude will use standard file calls, we are wanting to force MCP calls to show the logging**
 
 Claude Code calls the local filesystem MCP server. Approve the call when prompted.
 

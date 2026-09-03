@@ -20,12 +20,13 @@ In a Claude Code session, ask the server for its data:
 
 > List the data from the synthetic-pii server
 
+**You will be required to authenticate again**
 The records come back in full — names, **email addresses**, and driving licence numbers all visible. This is the baseline.
 
 ## Step 3: Create a Redaction Filter
 
-1. In the Obot admin UI, go to **Filters**
-2. Click **New Filter** and base it on the **built-in** filter (it can detect names, email addresses, and US driving licence numbers)
+1. In the Obot admin UI, go to **MCP Management /Filters**
+2. Click **Add New Filter** and base it on the **built-in** filter (it can detect names, email addresses, and US driving licence numbers)
 3. Set the action to **Redact** for **email addresses**
 4. Set the **server to apply it to** to **`synthetic-pii`**
 5. **Save** the filter
