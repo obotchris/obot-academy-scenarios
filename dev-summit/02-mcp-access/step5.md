@@ -7,7 +7,7 @@ In this step you'll create a composite server called `pii-filtered` that wraps t
 ## Create the Server
 
 1. In the Obot admin UI, go to **MCP Servers** and choose to add a new server (**Add Server** / **New MCP Server**)
-2. Give it a **name** of `pii-filtered`{{copy}}
+2. Give it a **name** of ```pii-filtered```{{copy}}
 3. Set the **runtime type** to **Composite**
 4. Add `pii-local` as a backing server so the composite has access to its tools
 
