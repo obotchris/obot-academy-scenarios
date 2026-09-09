@@ -21,6 +21,10 @@
       {
         "title": "Forward Local MCP Audit Logs to Obot",
         "text": "step4.md"
+      },
+      {
+        "title": "Enforce Policy at the Local Level",
+        "text": "step5.md"
       }
     ],
     "finish": {

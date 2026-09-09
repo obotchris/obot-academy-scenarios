@@ -59,6 +59,10 @@
         "text": "04-auditing-fleet/step4.md"
       },
       {
+        "title": "Block 4 · Enforce Policy at the Local Level",
+        "text": "04-auditing-fleet/step5.md"
+      },
+      {
         "title": "Block 5 · Add a Source Catalog",
         "text": "05-filters/step1.md"
       },
