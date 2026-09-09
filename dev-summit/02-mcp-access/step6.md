@@ -26,7 +26,9 @@ claude mcp list
 
 In a Claude Code session, ask for a specific customer:
 
-```get customer 1 using pii-filtered```{{copy}}
+```bash
+get customer 1 using pii-filtered
+```{{copy}}
 
 As with the other servers, the first time you do this you may be prompted to authenticate — click the Obot redirect link and complete the flow.
 
@@ -36,7 +38,9 @@ Claude uses the `get` tool (the one you left enabled) and — after you **Allow*
 
 Now try to list everyone:
 
-```list all customers using pii-filtered```{{copy}}
+```bash
+list all customers using pii-filtered
+```{{copy}}
 
 This time the request **fails**. Because you turned off the `search` and `list` tools on the composite server, there is no tool available for Claude to call — so it cannot list or search the customer data, even though the underlying `pii-local` container still supports it.
 
