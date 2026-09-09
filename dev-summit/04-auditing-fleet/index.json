@@ -1,0 +1,30 @@
+{
+  "title": "Block 4: Auditing — Fleet & Local Activity",
+  "description": "Install and enroll the Obot Sentry client, inventory the AI tooling on your machine, automate scanning with hooks, and forward a local MCP server's audit logs back to Obot for fleet-wide visibility.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Install and Enroll the Obot Sentry Client",
+        "text": "step1.md"
+      },
+      {
+        "title": "Scan and Report Your Inventory",
+        "text": "step2.md"
+      },
+      {
+        "title": "Automate Scanning with Hooks",
+        "text": "step3.md"
+      },
+      {
+        "title": "Forward Local MCP Audit Logs to Obot",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

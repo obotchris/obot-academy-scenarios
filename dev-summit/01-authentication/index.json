@@ -1,0 +1,18 @@
+{
+  "title": "Block 1: Setting Up Authentication",
+  "description": "Configure GitHub as an OAuth authentication provider for Obot, sign in with your GitHub account, and set yourself as the Owner of the instance.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Set Up GitHub Authentication",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

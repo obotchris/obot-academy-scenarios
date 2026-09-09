@@ -1,0 +1,22 @@
+{
+  "title": "Block 5: Filtering Sensitive Data",
+  "description": "Add a source catalog of MCP servers from a Git repository, then use Obot gateway filters to redact and block sensitive data returned by the synthetic-pii server — and learn why testing filters matters.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Add a Source Catalog",
+        "text": "step1.md"
+      },
+      {
+        "title": "Filter Sensitive Data with Gateway Filters",
+        "text": "step2.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

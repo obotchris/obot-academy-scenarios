@@ -1,0 +1,30 @@
+{
+  "title": "Block 2: Setting Up MCP Access",
+  "description": "Add the GitHub MCP server from Obot's catalog, connect Claude Code to it through the Obot gateway, and query your GitHub repositories from a Claude Code session.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Add the GitHub MCP Server to Claude",
+        "text": "step1.md"
+      },
+      {
+        "title": "Query GitHub for Your Repositories",
+        "text": "step2.md"
+      },
+      {
+        "title": "Add a Custom MCP Server",
+        "text": "step3.md"
+      },
+      {
+        "title": "Connect the Custom Server to Claude Code",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

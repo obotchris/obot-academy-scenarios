@@ -1,0 +1,18 @@
+{
+  "title": "Block 3: Auditing — Gateway Traffic",
+  "description": "Review the Obot audit log to see the MCP tool calls that were routed through the gateway — what was called, by whom, and when.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "View the Audit Log",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

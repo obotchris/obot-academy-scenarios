@@ -1,0 +1,18 @@
+{
+  "title": "Dev Summit: Prerequisites & Bootstrap Login",
+  "description": "What you need before starting the Obot Dev Summit course, and how to log in to your Obot instance for the first time using the bootstrap token.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Log In with the Bootstrap Token",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
