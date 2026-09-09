@@ -21,6 +21,14 @@
       {
         "title": "Connect the Custom Server to Claude Code",
         "text": "step4.md"
+      },
+      {
+        "title": "Create a Composite MCP Server",
+        "text": "step5.md"
+      },
+      {
+        "title": "Connect the Composite Server and See Tool Restrictions in Action",
+        "text": "step6.md"
       }
     ],
     "finish": {

@@ -31,6 +31,14 @@
         "text": "02-mcp-access/step4.md"
       },
       {
+        "title": "Block 2 · Create a Composite MCP Server",
+        "text": "02-mcp-access/step5.md"
+      },
+      {
+        "title": "Block 2 · Connect the Composite Server and See Tool Restrictions",
+        "text": "02-mcp-access/step6.md"
+      },
+      {
         "title": "Block 3 · View the Audit Log",
         "text": "03-auditing-gateway/step1.md"
       },
