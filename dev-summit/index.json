@@ -1,0 +1,66 @@
+{
+  "title": "Obot Dev Summit",
+  "description": "A complete Obot walkthrough split into five blocks: set up GitHub authentication, add MCP access (including a custom container server), audit gateway traffic, audit fleet and local activity with Obot Sentry, and filter sensitive data with gateway filters.",
+  "details": {
+    "intro": {
+      "text": "00-prerequisites/intro.md"
+    },
+    "steps": [
+      {
+        "title": "Setup · Log In with the Bootstrap Token",
+        "text": "00-prerequisites/step1.md"
+      },
+      {
+        "title": "Block 1 · Set Up GitHub Authentication",
+        "text": "01-authentication/step1.md"
+      },
+      {
+        "title": "Block 2 · Add the GitHub MCP Server to Claude",
+        "text": "02-mcp-access/step1.md"
+      },
+      {
+        "title": "Block 2 · Query GitHub for Your Repositories",
+        "text": "02-mcp-access/step2.md"
+      },
+      {
+        "title": "Block 2 · Add a Custom MCP Server",
+        "text": "02-mcp-access/step3.md"
+      },
+      {
+        "title": "Block 2 · Connect the Custom Server to Claude Code",
+        "text": "02-mcp-access/step4.md"
+      },
+      {
+        "title": "Block 3 · View the Audit Log",
+        "text": "03-auditing-gateway/step1.md"
+      },
+      {
+        "title": "Block 4 · Install and Enroll the Obot Sentry Client",
+        "text": "04-auditing-fleet/step1.md"
+      },
+      {
+        "title": "Block 4 · Scan and Report Your Inventory",
+        "text": "04-auditing-fleet/step2.md"
+      },
+      {
+        "title": "Block 4 · Automate Scanning with Hooks",
+        "text": "04-auditing-fleet/step3.md"
+      },
+      {
+        "title": "Block 4 · Forward Local MCP Audit Logs to Obot",
+        "text": "04-auditing-fleet/step4.md"
+      },
+      {
+        "title": "Block 5 · Add a Source Catalog",
+        "text": "05-filters/step1.md"
+      },
+      {
+        "title": "Block 5 · Filter Sensitive Data with Gateway Filters",
+        "text": "05-filters/step2.md"
+      }
+    ],
+    "finish": {
+      "text": "05-filters/finish.md"
+    }
+  }
+}
