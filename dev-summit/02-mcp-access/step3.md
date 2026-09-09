@@ -7,12 +7,28 @@ In this step you'll add a custom server that runs the **PII demo** container. Yo
 ## Add the Server
 
 1. In the Obot admin UI, go to **MCP Servers** and choose to add a new server (**Add Server** / **New MCP Server**)
-2. Give it a **name** of ```pii-local```{{copy}}
-3. Set the **runtime type** to **Container**
-4. Fill in the container details:
-   - **Image name** — ```ghcr.io/chrisurwin/piidemo:latest```{{copy}}
-   - **Port** — ```8000```{{copy}}
-5. Click **Save**
+2. Set the **runtime type** to **Container**
+3. Fill in the fields below, using the copy button on each value.
+
+**Name**
+
+```
+pii-local
+```{{copy}}
+
+**Image name**
+
+```
+ghcr.io/chrisurwin/piidemo:latest
+```{{copy}}
+
+**Port**
+
+```
+8000
+```{{copy}}
+
+Then click **Save**.
 
 Obot pulls the image and runs the container as a hosted MCP server. Once it's up, `pii-local` appears in your **MCP Servers** list alongside the GitHub server, ready to connect to just like any other catalog server.
 
