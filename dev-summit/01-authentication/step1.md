@@ -10,7 +10,7 @@ Now configure GitHub as an authentication provider so users can sign in with the
 
 ## Step 2: Register the OAuth App on GitHub
 
-1. Go to [GitHub Settings → Developer settings → OAuth Apps](https://github.com/settings/developers)
+1. Go to <a href="https://github.com/settings/developers" target="_blank" rel="noopener noreferrer">GitHub Settings → Developer settings → OAuth Apps</a>
 2. Click **New OAuth App**
 3. Fill in the fields:
    - **Application name** — e.g. `Obot`
