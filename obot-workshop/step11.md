@@ -1,24 +1,24 @@
 # Filter Sensitive Data with Gateway Filters
 
-Because MCP traffic flows through the Obot gateway, Obot can inspect responses and **redact** or **block** sensitive data before it ever reaches the client. In this final step you'll use the `synthetic-pii` server from the catalog you added earlier to see filters in action — and why testing them matters.
+Because MCP traffic flows through the Obot gateway, Obot can inspect responses and **redact** or **block** sensitive data before it ever reaches the client. In this final step you'll use the `customer-demo-data` server from the catalog you added earlier to see filters in action — and why testing them matters.
 
-The `synthetic-pii` server returns fake records containing **names, email addresses, and US driving licence numbers** — safe test data for exercising filters.
+The `customer-demo-data` server returns fake records containing **names, email addresses, and US driving licence numbers** — safe test data for exercising filters.
 
-## Step 1: Connect the synthetic-pii Server
+## Step 1: Connect the customer-demo-data Server
 
-1. In the Obot catalog, find **`synthetic-pii`** (from the `academy-catalog` source you added earlier) and install it
+1. In the Obot catalog, find **`customer-demo-data`** (from the `academy-catalog` source you added earlier) and install it
 2. Open the server and click **Connect to Server**
-3. Copy the connection URL, then add it to Claude Code as an HTTP MCP server (the URL looks like `https://<your-instance>.obotacademy.net/mcp-connect/default-synthetic-pii-<id>`):
+3. Copy the connection URL, then add it to Claude Code as an HTTP MCP server (the URL looks like `https://<your-instance>.obotacademy.net/mcp-connect/default-customer-demo-data-<id>`):
 
 ```bash
-claude mcp add --transport http "synthetic-pii" "<connection URL from the Connect to Server dialog>"
+claude mcp add --transport http "customer-demo-data" "<connection URL from the Connect to Server dialog>"
 ```{{copy}}
 
 ## Step 2: List the Data (No Filter Yet)
 
 In a Claude Code session, ask the server for its data:
 
-> List the data from the synthetic-pii server
+> List the data from the customer-demo-data server
 
 **You will be required to authenticate again**
 The records come back in full — names, **email addresses**, and driving licence numbers all visible. This is the baseline.
@@ -28,14 +28,14 @@ The records come back in full — names, **email addresses**, and driving licenc
 1. In the Obot admin UI, go to **MCP Management /Filters**
 2. Click **Add New Filter** and base it on the **built-in** filter (it can detect names, email addresses, and US driving licence numbers)
 3. Set the action to **Redact** for **email addresses**
-4. Set the **server to apply it to** to **`synthetic-pii`**
+4. Set the **server to apply it to** to **`customer-demo-data`**
 5. **Save** the filter
 
 ## Step 4: Verify the Redaction
 
 Run the same request again:
 
-> List the data from the synthetic-pii server
+> List the data from the customer-demo-data server
 
 This time the **email addresses are redacted**, while names and licence numbers still come through. The filter is being applied at the gateway.
 
