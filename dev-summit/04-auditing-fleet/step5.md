@@ -9,6 +9,11 @@ In this step you'll turn on tool-call enforcement, watch the local filesystem MC
 1. In the Obot admin UI, go to **Device Management / Devices / Configuration**
 2. Turn on **tool call enforcement**
 3. Leave the settings at their **default** and save the configuration
+4. Enforcee the agent tool calls
+```
+sudo obot-sentry hook-install --enforce
+sudo defaults write /Library/Preferences/com.obot.obot-sentry EnforcementEnabled -bool true
+```{{copy}}
 
 With enforcement on and no servers explicitly allowed, local MCP tool calls are blocked by default.
 

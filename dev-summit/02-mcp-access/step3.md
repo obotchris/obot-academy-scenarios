@@ -28,6 +28,11 @@ ghcr.io/chrisurwin/piidemo:latest
 8000
 ```{{copy}}
 
+**Path**
+
+```
+/mcp
+```{{copy}}
 Then click **Save**.
 
 Obot pulls the image and runs the container as a hosted MCP server. Once it's up, `pii-local` appears in your **MCP Servers** list alongside the GitHub server, ready to connect to just like any other catalog server.
