@@ -1,0 +1,42 @@
+{
+  "title": "Block 1: Setting Up MCP Access",
+  "description": "Add the GitHub MCP server, expose it to clients through a Virtual MCP (vMCP), test it with Obot's built-in MCP inspector, connect Claude Code through the gateway, add a custom container MCP server, and curate exactly which tools a vMCP exposes.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Add the GitHub MCP Server",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a vMCP for GitHub",
+        "text": "step2.md"
+      },
+      {
+        "title": "Test the vMCP with the MCP Inspector",
+        "text": "step3.md"
+      },
+      {
+        "title": "Connect the vMCP to Claude Code & Query GitHub",
+        "text": "step4.md"
+      },
+      {
+        "title": "Add a Custom Container MCP Server",
+        "text": "step5.md"
+      },
+      {
+        "title": "Curate Tools with a vMCP",
+        "text": "step6.md"
+      },
+      {
+        "title": "Connect the Curated vMCP & See Tool Restrictions in Action",
+        "text": "step7.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}

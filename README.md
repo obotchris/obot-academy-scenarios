@@ -8,6 +8,8 @@ Based on [chrisurwin/killacoda](https://github.com/chrisurwin/killacoda).
 
 | Scenario | Description |
 |----------|-------------|
+| [`agent_academy_v0.26`](./agent_academy_v0.26) | **Obot v0.26** end-to-end walkthrough: local first-login (detected email + set password) → add the GitHub MCP server → expose it through a Virtual MCP (vMCP) → test it with the built-in MCP inspector → connect Claude Code via the gateway → add a custom container server → curate tools with a vMCP → audit gateway traffic → enroll Obot Sentry (scan, hooks, forward local logs, enforce policy) → filter sensitive data with gateway filters |
+| [`dev-summit`](./dev-summit) | Earlier five-block walkthrough (pre-vMCP): bootstrap login → GitHub auth → GitHub MCP + composite servers → audit → Obot Sentry → filters |
 | [`obot-workshop`](./obot-workshop) | Full end-to-end walkthrough: bootstrap login → GitHub auth → add the GitHub MCP server to Claude Code → query repositories → view the audit log → add a source catalog → enroll the Obot Sentry client → scan inventory → automate with hooks → forward local MCP audit logs → filter sensitive data with gateway filters |
 | [`obot-github-auth`](./obot-github-auth) | Set up GitHub as an OAuth authentication provider |
 | [`obot-google-auth`](./obot-google-auth) | Set up Google as an OAuth authentication provider |

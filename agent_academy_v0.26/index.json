@@ -1,0 +1,78 @@
+{
+  "title": "Agent Academy (Obot v0.26)",
+  "description": "A complete Obot v0.26 walkthrough: log in with your detected email and set a password, expose MCP servers through Virtual MCPs (vMCPs), test them with the built-in MCP inspector, connect Claude Code through the gateway, curate tools per vMCP, audit gateway and local activity with Obot Sentry, and filter sensitive data with gateway filters.",
+  "details": {
+    "intro": {
+      "text": "00-prerequisites/intro.md"
+    },
+    "steps": [
+      {
+        "title": "Setup · First Login & Owner Setup",
+        "text": "00-prerequisites/step1.md"
+      },
+      {
+        "title": "Block 1 · Add the GitHub MCP Server",
+        "text": "01-mcp-access/step1.md"
+      },
+      {
+        "title": "Block 1 · Create a vMCP for GitHub",
+        "text": "01-mcp-access/step2.md"
+      },
+      {
+        "title": "Block 1 · Test the vMCP with the MCP Inspector",
+        "text": "01-mcp-access/step3.md"
+      },
+      {
+        "title": "Block 1 · Connect the vMCP to Claude Code & Query GitHub",
+        "text": "01-mcp-access/step4.md"
+      },
+      {
+        "title": "Block 1 · Add a Custom Container MCP Server",
+        "text": "01-mcp-access/step5.md"
+      },
+      {
+        "title": "Block 1 · Curate Tools with a vMCP",
+        "text": "01-mcp-access/step6.md"
+      },
+      {
+        "title": "Block 1 · Connect the Curated vMCP & See Tool Restrictions",
+        "text": "01-mcp-access/step7.md"
+      },
+      {
+        "title": "Block 2 · View the Audit Log",
+        "text": "02-auditing-gateway/step1.md"
+      },
+      {
+        "title": "Block 3 · Install and Enroll the Obot Sentry Client",
+        "text": "03-auditing-fleet/step1.md"
+      },
+      {
+        "title": "Block 3 · Scan and Report Your Inventory",
+        "text": "03-auditing-fleet/step2.md"
+      },
+      {
+        "title": "Block 3 · Automate Scanning with Hooks",
+        "text": "03-auditing-fleet/step3.md"
+      },
+      {
+        "title": "Block 3 · Forward Local MCP Audit Logs to Obot",
+        "text": "03-auditing-fleet/step4.md"
+      },
+      {
+        "title": "Block 3 · Enforce Policy at the Local Level",
+        "text": "03-auditing-fleet/step5.md"
+      },
+      {
+        "title": "Block 4 · Add a Source Catalog",
+        "text": "04-filters/step1.md"
+      },
+      {
+        "title": "Block 4 · Filter Sensitive Data with Gateway Filters",
+        "text": "04-filters/step2.md"
+      }
+    ],
+    "finish": {
+      "text": "04-filters/finish.md"
+    }
+  }
+}
