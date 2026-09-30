@@ -1,0 +1,86 @@
+{
+  "title": "Dev Summit Toronto — Governing Enterprise AI Agents",
+  "description": "A security-focused Obot v0.26 workshop in three labs: connect a deliberately vulnerable MCP server and run a live prompt-injection → PII → exfiltration attack, then take away the attacker's options one control at a time (least-privilege vMCPs and gateway data filters), and finally close the shadow-AI blind spot with Obot Sentry fleet visibility and local enforcement. The golden rule: the model is not a security control.",
+  "details": {
+    "intro": {
+      "text": "00-prerequisites/intro.md"
+    },
+    "steps": [
+      {
+        "title": "Setup · First Login & Prerequisites",
+        "text": "00-prerequisites/step1.md"
+      },
+      {
+        "title": "Lab A · Add the Vulnerable MCP Server",
+        "text": "01-connect-exploit/step1.md"
+      },
+      {
+        "title": "Lab A · Expose It Through a vMCP (As-Is)",
+        "text": "01-connect-exploit/step2.md"
+      },
+      {
+        "title": "Lab A · Connect the vMCP to Claude Code",
+        "text": "01-connect-exploit/step3.md"
+      },
+      {
+        "title": "Lab A · Baseline — a Benign Request",
+        "text": "01-connect-exploit/step4.md"
+      },
+      {
+        "title": "Lab A · The Attack — Indirect Prompt Injection",
+        "text": "01-connect-exploit/step5.md"
+      },
+      {
+        "title": "Lab A · Bonus — Tool Poisoning (Line Jumping)",
+        "text": "01-connect-exploit/step6.md"
+      },
+      {
+        "title": "Lab A · See the Whole Chain in the Audit Log",
+        "text": "01-connect-exploit/step7.md"
+      },
+      {
+        "title": "Lab B · Break the Trifecta with a Least-Privilege vMCP",
+        "text": "02-contain-blast-radius/step1.md"
+      },
+      {
+        "title": "Lab B · Re-run the Attack Against the Safe Surface",
+        "text": "02-contain-blast-radius/step2.md"
+      },
+      {
+        "title": "Lab B · Add a Source Catalog & Baseline the PII Data",
+        "text": "02-contain-blast-radius/step3.md"
+      },
+      {
+        "title": "Lab B · Create a Redaction Filter",
+        "text": "02-contain-blast-radius/step4.md"
+      },
+      {
+        "title": "Lab B · Switch to Blocking & Why You Must Test Filters",
+        "text": "02-contain-blast-radius/step5.md"
+      },
+      {
+        "title": "Lab C · Enroll the Obot Sentry Client",
+        "text": "03-audit-shadow-ai/step1.md"
+      },
+      {
+        "title": "Lab C · Inventory Your Machine",
+        "text": "03-audit-shadow-ai/step2.md"
+      },
+      {
+        "title": "Lab C · Keep It Current with Hooks",
+        "text": "03-audit-shadow-ai/step3.md"
+      },
+      {
+        "title": "Lab C · Forward Local MCP Logs to Obot",
+        "text": "03-audit-shadow-ai/step4.md"
+      },
+      {
+        "title": "Lab C · From Visibility to Control — Local Enforcement",
+        "text": "03-audit-shadow-ai/step5.md"
+      }
+    ],
+    "finish": {
+      "text": "03-audit-shadow-ai/finish.md"
+    }
+  }
+}

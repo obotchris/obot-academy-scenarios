@@ -1,0 +1,34 @@
+{
+  "title": "Lab B: Contain the Blast Radius",
+  "description": "Rebuild the vulnerable integration so the Lab A attack can't happen, using two controls outside the model: least privilege via a Managed vMCP that curates the tool surface, and data filtering at the gateway. Then learn why filters must be tested.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Break the Trifecta with a Least-Privilege vMCP",
+        "text": "step1.md"
+      },
+      {
+        "title": "Re-run the Attack Against the Safe Surface",
+        "text": "step2.md"
+      },
+      {
+        "title": "Add a Source Catalog & Baseline the PII Data",
+        "text": "step3.md"
+      },
+      {
+        "title": "Create a Redaction Filter",
+        "text": "step4.md"
+      },
+      {
+        "title": "Switch to Blocking & Why You Must Test Filters",
+        "text": "step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
