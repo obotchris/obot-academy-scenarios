@@ -1,6 +1,6 @@
 {
   "title": "Dev Summit Toronto — Governing Enterprise AI Agents",
-  "description": "A security-focused Obot v0.26 workshop in three labs: connect a deliberately vulnerable MCP server and run a live prompt-injection → PII → exfiltration attack, then take away the attacker's options one control at a time (least-privilege vMCPs and gateway data filters), and finally close the shadow-AI blind spot with Obot Sentry fleet visibility and local enforcement. The golden rule: the model is not a security control.",
+  "description": "A security-focused Obot v0.26 workshop in three labs: connect a deliberately vulnerable MCP server and run a prompt-injection → PII → exfiltration scenario (seeing why a modern model often refuses, then proving the capability directly), then take away the attacker's options one control at a time (least-privilege vMCPs and gateway data filters), and finally close the shadow-AI blind spot with Obot Sentry fleet visibility and local enforcement. The golden rule: the model is not a security control — and it isn't a reliable vulnerability either.",
   "details": {
     "intro": {
       "text": "00-prerequisites/intro.md"
