@@ -9,6 +9,7 @@ Based on [chrisurwin/killacoda](https://github.com/chrisurwin/killacoda).
 | Scenario | Description |
 |----------|-------------|
 | [`agent_academy_v0.26`](./agent_academy_v0.26) | **Obot v0.26** end-to-end walkthrough: local first-login (detected email + set password) → add the GitHub MCP server → expose it through a Virtual MCP (vMCP) → test it with the built-in MCP inspector → connect Claude Code via the gateway → add a custom container server → curate tools with a vMCP → audit gateway traffic → enroll Obot Sentry (scan, hooks, forward local logs, enforce policy) → filter sensitive data with gateway filters |
+| [`agent_con_sjc`](./agent_con_sjc) | **Obot v0.26** self-paced adaptation of the Dev Summit Toronto security workshop, with reader-focused explanations covering prompt injection, tool restrictions, gateway filtering, and local MCP monitoring and enforcement |
 | [`dev_summit_toronto`](./dev_summit_toronto) | **Obot v0.26** security workshop — *Governing Enterprise AI Agents*: Lab A connect a vulnerable MCP server (As-Is vMCP) and run a live prompt-injection → PII → exfil attack; Lab B contain it with a least-privilege (Managed) vMCP + gateway PII filters; Lab C close the shadow-AI blind spot with Obot Sentry visibility and local enforcement |
 | [`dev-summit`](./dev-summit) | Earlier five-block walkthrough (pre-vMCP): bootstrap login → GitHub auth → GitHub MCP + composite servers → audit → Obot Sentry → filters |
 | [`obot-workshop`](./obot-workshop) | Full end-to-end walkthrough: bootstrap login → GitHub auth → add the GitHub MCP server to Claude Code → query repositories → view the audit log → add a source catalog → enroll the Obot Sentry client → scan inventory → automate with hooks → forward local MCP audit logs → filter sensitive data with gateway filters |
@@ -19,12 +20,14 @@ Based on [chrisurwin/killacoda](https://github.com/chrisurwin/killacoda).
 
 ## Scenario structure
 
-Each scenario is a directory containing:
+Each scenario is a directory with an `index.json` that selects its content. A simple scenario contains:
 
 - `index.json` — scenario metadata and step order
 - `intro.md` — introduction shown before the steps
 - `step*.md` — the individual steps
 - `finish.md` — closing screen
+
+Multi-lab scenarios can place their Markdown pages in subdirectories, each with its own `index.json`. The top-level index defines the combined tutorial; the nested indexes define individual labs. Content paths are relative to the index that references them, and the `details.steps` array sets the step order and navigation titles.
 
 The two auth scenarios assume Obot is running with authentication enabled, so they begin by logging in with the bootstrap token surfaced in the environment. The MCP and LLM scenarios go straight to the admin UI.
 

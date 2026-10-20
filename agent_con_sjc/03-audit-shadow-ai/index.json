@@ -1,0 +1,34 @@
+{
+  "title": "Lab C: Audit & Shadow AI",
+  "description": "Everything so far went through the gateway, but developers run MCP servers locally, never touching Obot — the shadow-AI blind spot. Enroll Obot Sentry, inventory your machine, forward local MCP logs to Obot, and enforce an allow-list so only approved local MCP servers can run.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Enroll the Obot Sentry Client",
+        "text": "step1.md"
+      },
+      {
+        "title": "Inventory Your Machine",
+        "text": "step2.md"
+      },
+      {
+        "title": "Keep It Current with Hooks",
+        "text": "step3.md"
+      },
+      {
+        "title": "Forward Local MCP Logs to Obot",
+        "text": "step4.md"
+      },
+      {
+        "title": "From Visibility to Control — Local Enforcement",
+        "text": "step5.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
