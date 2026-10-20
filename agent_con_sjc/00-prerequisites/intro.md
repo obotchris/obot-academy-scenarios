@@ -1,10 +1,10 @@
 # Governing Enterprise AI Agents — Prerequisites
 
-Welcome to **Dev Summit Toronto**, running on **Obot v0.26**. Obot is an open-source platform for governing MCP (Model Context Protocol) technologies. This workshop is hands-on and security-focused: you'll attack a badly-governed AI integration, watch it succeed, then dismantle the attacker's options one control at a time.
+This tutorial uses **Obot v0.26**, an open-source platform for governing MCP (Model Context Protocol) technologies. You'll connect a deliberately vulnerable customer-support integration, examine how prompt injection can misuse its tools, and apply controls that limit access to tools and data.
 
 ## How the labs fit together
 
-You will attack a badly-governed integration, watch it work, then take away the attacker's options one control at a time — and prove each control with the audit log.
+Complete the labs in order. Lab A establishes the integration and its audit trail. Lab B uses that setup to test tool restrictions, then introduces data filtering. Lab C extends your work to MCP servers running locally on your machine.
 
 | Lab | You do | Control demonstrated |
 |-----|--------|----------------------|
@@ -12,7 +12,7 @@ You will attack a badly-governed integration, watch it work, then take away the 
 | **Lab B — Contain the Blast Radius** | Rebuild the same integration with a least-privilege (Managed) vMCP + a gateway PII filter; re-run the attack | Least privilege + data filtering |
 | **Lab C — Audit & Shadow AI** | Enroll Obot Sentry, inventory your machine, forward *local* MCP logs, and enforce an allow-list | Fleet visibility + local enforcement |
 
-> **Golden rule of the day:** the model is not a security control. Every defense below sits *outside* the model — at the gateway, in the tool surface, or on the device.
+> In these labs, you'll apply controls outside the model: restricting which tools it can call, filtering the data returned through the gateway, and enforcing policy on your device. These controls limit what the integration permits even when the model follows malicious instructions.
 
 ## What's different on v0.26
 

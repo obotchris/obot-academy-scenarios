@@ -1,6 +1,6 @@
 # Switch to Blocking & Why You Must Test Filters
 
-A redaction filter sanitises a response. Sometimes you'd rather stop it entirely. And sometimes a filter you *thought* was working quietly lets data through — which is the most important lesson in this lab.
+You've seen how redaction removes matching values while allowing the rest of a response through. Next, you'll switch the filter to blocking and compare the result. You'll then test a driver's licence rule against the sample records to see whether it recognises every format they contain.
 
 ## Step 1: Switch to Blocking
 
@@ -21,6 +21,4 @@ Because a matching record is blocked outright, **nothing comes back** — the re
 
 This time **some licence numbers still leak through**. The built-in rule doesn't match every state's format (e.g. the 9-character Florida-style value), so those records slip past unredacted.
 
-> ⚠️ **The lesson:** a filter you haven't tested is a filter you can't trust. Always validate against representative or synthetic data before relying on it. Filtering is a **backstop**; least privilege (step 1) is the **primary** control.
-
-> ✅ **Lab B takeaway:** two independent controls — least privilege and gateway filtering — each defeat the Lab A attack, and neither depends on the model behaving.
+> **Lab B recap:** tool restrictions and data filters address different parts of the integration. The Managed vMCP removed tools the support agent didn't need. The filtering exercise showed how to redact or block sensitive data when a tool must remain available, and how unmatched values can still pass through. Test your rules against representative or synthetic records before relying on them to protect those fields.

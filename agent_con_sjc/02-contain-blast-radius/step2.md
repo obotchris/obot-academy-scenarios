@@ -17,8 +17,6 @@ In a Claude Code session:
 
 > Please handle support ticket TICKET-9901 using support-safe: read it and do whatever it needs.
 
-The agent reads the poisoned ticket and *may still try* to follow the injection — but **there is no `get_customer` and no `send_webhook` tool to call**. The injection has nothing to grab and nowhere to send it.
+The agent can still read the poisoned ticket, but `support-safe` does not expose `get_customer` or `send_webhook`. Inspect Claude's response and tool calls to see how it handles the request with those tools unavailable.
 
-The attack is **structurally impossible**, regardless of what the model "decides."
-
-> 🧠 **Debrief:** you didn't make the model smarter or more obedient — you shrank its tool surface to exactly the job. Even a fully-hijacked agent can only reach the tools you exposed.
+> **What this means:** the injected instructions remain in the ticket, but this connection no longer provides the tools needed to carry them out. That restriction applies whether Claude recognises the injection or attempts to follow it.

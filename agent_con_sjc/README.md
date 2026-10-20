@@ -4,9 +4,9 @@
 **Platform:** Obot v0.26 (hosted, one instance per participant)
 **AI client:** Claude Code
 
-A security-focused walkthrough built on **Obot v0.26**. You attack a badly-governed integration, watch it work, then take away the attacker's options one control at a time — and prove each control with the audit log.
+A self-paced tutorial on governing MCP integrations with Obot v0.26. The labs cover prompt injection, tool access, gateway data filtering, and monitoring and enforcement for local MCP servers.
 
-> **Golden rule of the day:** the model is not a security control. Every defense here sits *outside* the model — at the gateway, in the tool surface, or on the device.
+> In these labs, you'll apply controls outside the model: restricting which tools it can call, filtering the data returned through the gateway, and enforcing policy on your device. These controls limit what the integration permits even when the model follows malicious instructions.
 
 ## Labs
 

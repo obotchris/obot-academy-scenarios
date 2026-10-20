@@ -1,6 +1,6 @@
 # Congratulations — Workshop Complete!
 
-You attacked a badly-governed AI integration, then dismantled the attacker's options one control at a time — and proved each control with the audit log.
+You've completed the gateway and local-device exercises. The table below connects the risks you examined with the controls and audit records used throughout the tutorial.
 
 ## Wrap-up — map the attack to the controls
 

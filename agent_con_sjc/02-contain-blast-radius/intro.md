@@ -5,10 +5,10 @@
 In this lab you'll:
 
 1. Break the trifecta by building a **Managed** vMCP (`support-safe`) that exposes only the tools a support agent actually needs
-2. Re-run the Lab A attack against the safe surface and watch it become structurally impossible
-3. Add a source catalog with a clean PII data source
-4. Create a gateway **redaction** filter and verify it
-5. Switch to **blocking**, then learn — the hard way — why you must test filters
+2. Re-run the Lab A request through `support-safe` and check which tools are available
+3. Add a source catalog with a synthetic customer-data server
+4. Create a gateway **redaction** filter and verify which fields it removes
+5. Compare **blocking** with redaction, then test whether a different rule catches every sample value
 
 This lab assumes you've completed **Lab A**.
 
