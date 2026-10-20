@@ -30,4 +30,4 @@ Start a Claude Code session from there and send:
 
 Open Obot's **Audit** log. Alongside your gateway entries from Labs A and B, you now see the **local** filesystem call — forwarded by Sentry and attributed to your device and user.
 
-> 🧠 **Debrief:** without Sentry, that call would be invisible to the org. Now local and gateway MCP activity land in one audit trail.
+> **What this means:** without Sentry, that call would be invisible to the org. Now local and gateway MCP activity land in one audit trail.

@@ -13,7 +13,7 @@ You've completed the gateway and local-device exercises. The table below connect
 | Local, off-gateway MCP call | Sentry forwarding + local enforcement (C4–C5) | device |
 | Everything | Gateway + Sentry audit log (A7, C4) | audit |
 
-**One sentence to leave with:** don't try to make the model perfectly obedient — remove the capabilities an attacker needs, filter what leaves, and log everything, everywhere.
+Across these labs, you've explored how tool restrictions, data filters, and audit logs work together. Restricting tools limits the actions available to an agent, filtering controls which data reaches the client, and logging helps you inspect what happened. These controls let you govern the integration without relying entirely on the model to reject malicious instructions.
 
 ## Optional extension labs (self-paced)
 

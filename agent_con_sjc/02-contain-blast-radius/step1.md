@@ -31,4 +31,4 @@ Leave **ON**:
 
 Then **Save**.
 
-> 🧠 **Debrief:** this is the most durable control in the room. You didn't try to *detect* the attack — you removed the capabilities it depended on. The backing `vuln-support` server can still do all of these things, but `support-safe` simply doesn't expose them. **Least privilege beats detection.**
+> **What this means:** you've applied least privilege by removing tools this support agent doesn't need. The backing `vuln-support` server still provides those tools, but `support-safe` doesn't expose them. Calls through this vMCP therefore cannot use the customer-data and webhook tools that the Lab A attack depended on.
