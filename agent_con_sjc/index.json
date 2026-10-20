@@ -1,5 +1,5 @@
 {
-  "title": "Dev Summit Toronto — Governing Enterprise AI Agents",
+  "title": "AgentCon SJC — Governing Enterprise AI Agents",
   "description": "A self-paced Obot v0.26 tutorial covering prompt injection, tool access, and data protection. Connect a vulnerable customer-support MCP server, inspect its audit trail, test tool restrictions and gateway filters, then use Obot Sentry to inventory, monitor, and control local MCP activity.",
   "details": {
     "intro": {
